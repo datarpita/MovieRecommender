@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<!--Header-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Movie Recommender |</title>
+
+<!-- Bootstrap -->
+<link href="../libs/bootstrap/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<!-- Font Awesome -->
+<link href="../libs/font-awesome/css/font-awesome.css" rel="stylesheet">
+<!-- Custom Theme Style -->
+<link href="../res/styles/custom.min.css" rel="stylesheet">
+
+<STYLE TYPE="text/css" media="all">
+.ui-autocomplete {
+	position: absolute;
+	cursor: default;
+	height: 200px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+</STYLE>
+
+</head>
+<body>
+<body class="nav-md">
+	<div class="container body">
+		<div class="main_container">
+			<div class="col-md-3 left_col">
+				<div class="left_col scroll-view">
+					<!-- navBar Start-->
+					<div class="navbar nav_title" style="border: 0;">
+						<a href="/playGround" class="site_title">Online Movie
+							Recommender</a>
+					</div>
+					<div class="clearfix"></div>
+					<br />
+					<!--navbar end-->
+
+					<!-- sidebar menu -->
+					<div id="sidebar-menu"
+						class="main_menu_side hidden-print main_menu">
+						<div class="menu_section">
+							<!--<h3>General</h3>-->
+							<ul class="nav side-menu">
+								<li><a href=""><i class="fa fa-cubes"></i> Rate Movies
+										<span class="fa fa-chevron-down"></span></a></li>
+								<li><a><i class="fa fa-users"></i> Option 2 <span
+										class="fa fa-chevron-down"></span></a></li>
+
+							</ul>
+						</div>
+
+					</div>
+					<!--Side Bar end-->
+				</div>
+			</div>
+			<!-- top navigation -->
+			<div class="top_nav">
+				<div class="nav_menu">
+					<nav>
+						<div class="nav toggle">
+							<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<!-- /top navigation -->
+
+			<!-- page content -->
+			<div class="right_col" role="main">
+
+
+
+				<!--Shows All Movies -->
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="dashboard_graph">
+
+							<div class="row x_title">
+								<div class="col-md-6">
+									<h3>
+										Search & Rate movies<small></small>
+									</h3>
+								</div>
+							</div>
+
+							<div class="row">
+
+								<!--
+                                 Write your html code here to display the products
+                                 Create only the containers and fill them using jquery
+                                 corresponding jquery function to use getProducts()
+
+                                 Split the display area into 2 columns
+                                 first column should be 80%
+                                 second column should 20%
+
+                                 Display the products as a list in the first column
+                                 Use the second column for the add/edit form.
+                                 Form should contain name, category, description, price fields as shown in screen shot.
+                                 Use a single form for both Add and Edit
+
+                                 Make sure under the title of the two columns there is a div for showing messages
+                                 Show the messsage in the correct div based on the button which is clicked
+                            -->
+
+								<div class="col-md-8">
+									<div class="form-group ui-widget">
+										<label for="moviesearch">Movie name</label> <input type="text"
+											class="form-control search" id="moviesearch">
+
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-group">
+										<label for="rating">Rating</label> <input type="text"
+											class="form-control" id="rating">
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-group">
+										<a class="btn icon-btn btn-success" href="#"> <span
+											class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>Add
+										</a>
+									</div>
+								</div>
+
+
+								<div class="clearfix"></div>
+							</div>
+							<div class="row">
+								<div class="col-md-8">
+									
+								</div>
+								<div class="col-md-2">
+									
+								</div>
+								<div class="col-md-2">
+									<button type="button" class="btn btn-success" id="recommendBtn" >Recommend</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- End of all Products -->
+
+					
+
+				</div>
+				
+				<div id="recommendDiv" class="row makeHidden">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="dashboard_graph">
+
+							<div class="row x_title">
+								<div class="col-md-6">
+									<h3>
+										List of Recommended movies <small></small>
+									</h3>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div id="listDiv"  class="col-md-8">
+									
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				
+				<!-- /page content -->
+
+
+				<!-- /footer content -->
+			</div>
+		</div>
+	</div>
+	<script src="../libs/jquery/dist/jquery.min.js"></script>
+	<script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../res/js/custom.js"></script>
+	<script src="../res/scripts/index.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="../res/js/autocompleter.js"></script>
+</html>

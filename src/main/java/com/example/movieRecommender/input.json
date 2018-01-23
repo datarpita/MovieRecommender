@@ -1,0 +1,27 @@
+{
+  "Inputs": {
+    "input1": {
+      "ColumnNames": [
+        "UserId",
+        "MovieId",
+        "Rating",
+        "Timestamp"
+      ],
+      "Values": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    }
+  },
+  "GlobalParameters": {}
+}

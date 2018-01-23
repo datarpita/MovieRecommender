@@ -1,0 +1,18 @@
+{
+	"Results":{
+		"output1":{
+			"type":"table",
+			"value":{
+				"ColumnNames":
+					["User","Item 1","Item 2"],
+				"ColumnTypes":
+					["String","String","String"],
+				"Values":[
+					[
+						"28000","The Shawshank Redemption (1994)","The Godfather (1972)"
+					]
+				]
+			}
+		}
+	}
+}
